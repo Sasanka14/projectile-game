@@ -1,170 +1,172 @@
-# 🎯 Projectile Target Practice
+# 🎯 Projectile Target Practice  
 
-A physics-based educational game that helps students understand projectile motion through interactive simulation and engaging gameplay.
+A **physics-based educational game** that helps students understand **projectile motion** through interactive simulations and engaging gameplay. Perfect for both **learning** and **fun experimentation**.  
 
 ![Game Preview](frontend/assets/demo.mov)
 
-## 🚀 Features
+---
 
-- **Interactive Physics Simulation**
-  - Real-time trajectory visualization
-  - Advanced physics parameters (wind, air resistance)
-  - Accurate motion calculations
+## 🚀 Features  
 
-- **Scoring System**
-  - Multiple target zones with different multipliers
-  - Score tracking and high score system
-  - Progressive difficulty
+### 🔬 Physics Simulation  
+- Real-time trajectory visualization  
+- Adjustable physics parameters (wind, air resistance, gravity)  
+- Accurate motion calculations  
 
-- **Educational Tools**
-  - Real-time parameter adjustments
-  - Trajectory analysis
-  - Instant feedback on shots
+### 🏆 Scoring System  
+- Multiple target zones with multipliers  
+- Score tracking and leaderboard system  
+- Progressive difficulty for skill growth  
 
-- **Modern UI/UX**
-  - Glass morphism design
-  - Particle effects
-  - Smooth animations
-  - Responsive layout
+### 📚 Educational Tools  
+- On-the-fly parameter adjustments  
+- Detailed trajectory analysis  
+- Instant performance feedback  
 
-## 🛠️ Technology Stack
+### 🎨 Modern UI/UX  
+- Glass morphism design with blur effects  
+- Particle background effects  
+- Smooth animations (GSAP + Animate.css)  
+- Fully responsive layout  
 
-### Frontend
-- HTML5 Canvas for rendering
-- Vanilla JavaScript for game logic
-- CSS3 with modern features
-  - Glass morphism effects
-  - CSS Grid layouts
-  - Custom animations
+---
 
-### Backend
-- Python Flask API
-- Advanced physics calculations
-- Real-time trajectory computation
+## 🛠️ Technology Stack  
 
-### Libraries
-- Particles.js for background effects
-- GSAP for animations
-- Animate.css for transitions
+**Frontend**  
+- HTML5 Canvas (physics rendering)  
+- Vanilla JavaScript (game logic)  
+- CSS3 (Grid, animations, glass morphism)  
 
-## 🎮 How to Play
+**Backend**  
+- Python **Flask API**  
+- Physics computations & trajectory calculations  
 
-1. **Set Your Parameters**
-   - Adjust initial velocity
-   - Set launch angle
-   - Configure environmental factors
+**Libraries & Tools**  
+- [Particles.js](https://vincentgarreau.com/particles.js/) – background effects  
+- [GSAP](https://greensock.com/gsap/) – animations  
+- [Animate.css](https://animate.style/) – transitions  
 
-2. **Aim for the Target**
-   - Calculate optimal trajectory
-   - Consider wind effects
-   - Target different scoring zones
+---
 
-3. **Launch and Learn**
-   - Watch your projectile's path
-   - Analyze the results
-   - Adjust for better accuracy
+## 🎮 How to Play  
 
-## 🚀 Getting Started
+1. **Set Your Parameters** – Choose initial velocity, launch angle, and environment factors.  
+2. **Aim for the Target** – Predict the best trajectory considering wind and drag.  
+3. **Launch & Learn** – Observe the path, analyze results, and refine your aim.  
 
-### Prerequisites
-- Python 3.9 or higher
-- Modern web browser
-- npm (optional, for development)
+---
 
-### Installation
+## ⚡ Getting Started  
 
-1. Clone the repository:
+### Prerequisites  
+- Python **3.9+**  
+- A modern web browser  
+- npm *(optional, for development)*  
+
+### Installation  
+
+1. **Clone the repository**  
    ```bash
    git clone https://github.com/sasanka/projectile-game.git
    cd projectile-game
-   ```
 
-2. Install Python dependencies:
+
+2. **Install backend dependencies**
+
    ```bash
    pip install flask flask-cors numpy
    ```
 
-3. Start the backend server:
+3. **Run the backend server**
+
    ```bash
    cd backend
    python app.py
    ```
 
-4. Start the frontend (using Python's built-in server):
+4. **Run the frontend (using Python server)**
+
    ```bash
    cd frontend
    python -m http.server 8080
    ```
 
-5. Open in browser:
+5. **Open in your browser**
+
    ```
    http://localhost:8080/landing.html
    ```
 
+---
+
 ## 📐 Physics Simulation
 
-The game simulates projectile motion with:
-- Gravity effects
-- Air resistance
-- Wind influence
-- Multiple environmental factors
+**Implemented Factors**
 
-### Parameters
-- Initial velocity (v0)
-- Launch angle (θ)
-- Gravity (g)
-- Air density (ρ)
-- Wind speed and direction
-- Projectile mass and radius
+* Gravity
+* Air resistance (drag)
+* Wind (speed & direction)
+* Projectile mass & radius
 
-### Calculations
-- Trajectory computation using numerical integration
-- Real-time path prediction
-- Collision detection with target zones
+**Core Calculations**
 
-## 🎨 Design Features
+* Real-time trajectory prediction (numerical integration)
+* Path visualization
+* Collision detection with targets
 
-- **Glass Morphism UI**
-  - Transparent panels
-  - Blur effects
-  - Modern aesthetics
+---
 
-- **Responsive Design**
-  - Mobile-friendly layout
-  - Adaptive controls
-  - Cross-browser compatibility
+## 🎨 Design Highlights
 
-- **Visual Feedback**
-  - Trajectory visualization
-  - Score animations
-  - Parameter feedback
+* Transparent glass morphism UI
+* Adaptive mobile-first layout
+* Smooth parameter-to-result feedback
+* Engaging score animations
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+We welcome contributions!
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+1. Fork the repository
+2. Create a feature branch:
+
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit changes:
+
+   ```bash
+   git commit -m "Add AmazingFeature"
+   ```
+4. Push to branch & open PR
+
+---
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+---
 
 ## 🙏 Acknowledgments
 
-- Particles.js for background effects
-- GSAP for smooth animations
-- Font Awesome for icons
-- Google Fonts for typography
+* **Particles.js** – visual effects
+* **GSAP** – smooth animations
+* **Font Awesome** – icons
+* **Google Fonts** – typography
+
+---
 
 ## 📧 Contact
 
-Sasanka - [GitHub Profile](https://github.com/sasanka)
+👤 **Sasanka**
 
-Project Link: [https://github.com/sasanka/projectile-game](https://github.com/sasanka/projectile-game)
+* GitHub: [sasanka](https://github.com/sasanka14)
+* Project: [Projectile Game](https://github.com/sasanka/projectile-game)
 
 ---
-Built with ✨ by Sasanka © 2025
+
+✨ Built with dedication by **Sasanka** © 2025
