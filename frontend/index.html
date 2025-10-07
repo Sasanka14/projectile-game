@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Projectile Target Practice 🎯</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <header>
+    <h1>Projectile Target Practice 🎯</h1>
+    <p class="subtitle">Set your shot. Trust the math. Hit the mark.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <div class="panel-group">
+        <h3>Basic Settings</h3>
+        <div class="field">
+          <label>Initial Velocity (m/s)</label>
+          <input id="v0" type="number" step="0.1" value="25" />
+        </div>
+        <div class="field">
+          <label>Angle (degrees)</label>
+          <input id="angle" type="number" step="0.1" value="45" />
+        </div>
+        <div class="field">
+          <label>Gravity g (m/s²)</label>
+          <input id="g" type="number" step="0.01" value="9.81" />
+        </div>
+        <div class="field">
+          <label>Time Step dt (s)</label>
+          <input id="dt" type="number" step="0.005" value="0.02" />
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <h3>Projectile Properties</h3>
+        <div class="field">
+          <label>Mass (kg)</label>
+          <input id="mass" type="number" step="0.01" value="0.1" />
+        </div>
+        <div class="field">
+          <label>Radius (m)</label>
+          <input id="projectile-radius" type="number" step="0.001" value="0.02" />
+        </div>
+        <div class="field">
+          <label>Target Radius (m)</label>
+          <input id="radius" type="number" step="0.1" value="1.5" />
+        </div>
+      </div>
+
+      <div class="panel-group">
+        <h3>Environment</h3>
+        <div class="field">
+          <label>Wind Speed (m/s)</label>
+          <input id="wind-speed" type="number" step="0.1" value="0" />
+        </div>
+        <div class="field">
+          <label>Wind Angle (degrees)</label>
+          <input id="wind-angle" type="number" step="1" value="0" />
+        </div>
+        <div class="field">
+          <label>Air Density (kg/m³)</label>
+          <input id="air-density" type="number" step="0.001" value="1.225" />
+        </div>
+        <div class="field">
+          <label>Altitude (m)</label>
+          <input id="altitude" type="number" step="10" value="0" />
+        </div>
+        <div class="field">
+          <label>Temperature (°C)</label>
+          <input id="temperature" type="number" step="0.1" value="20" />
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="newTargetBtn">New Target</button>
+        <button id="shootBtn">Shoot</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </section>
+
+    <section class="panel stats">
+      <div class="panel-group">
+        <h3>Game Stats</h3>
+        <div><strong>Attempts:</strong> <span id="attempts">0</span> / <span id="attemptsMax">5</span></div>
+        <div><strong>Score:</strong> <span id="score">0</span></div>
+        <div><strong>Score Multiplier:</strong> <span id="score-multiplier">1</span>×</div>
+        <div><strong>Target X:</strong> <span id="targetX">—</span> m</div>
+        <div id="result" class="result banner">—</div>
+      </div>
+
+      <div class="panel-group">
+        <h3>Trajectory Stats</h3>
+        <div class="stat-grid">
+          <div class="stat-item">
+            <label>Max Height:</label>
+            <span id="maxH">—</span> m
+          </div>
+          <div class="stat-item">
+            <label>Range:</label>
+            <span id="range">—</span> m
+          </div>
+          <div class="stat-item">
+            <label>Flight Time:</label>
+            <span id="tof">—</span> s
+          </div>
+          <div class="stat-item">
+            <label>Max Speed:</label>
+            <span id="max-speed">—</span> m/s
+          </div>
+          <div class="stat-item">
+            <label>Impact Speed:</label>
+            <span id="impact-speed">—</span> m/s
+          </div>
+          <div class="stat-item">
+            <label>Impact Angle:</label>
+            <span id="impact-angle">—</span>°
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="canvas-wrap">
+      <canvas id="game" width="960" height="420"></canvas>
+    </section>
+  </main>
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>

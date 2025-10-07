@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tutorial - Projectile Target Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body class="tutorial-page">
+    <div class="tutorial-container">
+      <header class="tutorial-header">
+        <a href="./landing.html" class="back-link">← Back to Home</a>
+        <h1 class="glow-text">How to Play</h1>
+        <p class="subtitle">Master the art of projectile motion with our comprehensive guide</p>
+      </header>
+
+      <main class="tutorial-content">
+        <section class="video-section">
+          <div class="video-container glass-panel">
+            <video controls autoplay loop muted class="demo-video">
+              <source src="./assets/demo.mov" type="video/quicktime" />
+              <source src="./assets/demo.mov" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+
+        <section class="instructions">
+          <div class="instruction-step glass-panel animate__animated animate__fadeInLeft">
+            <div class="step-header">
+              <div class="step-number glow-text">1</div>
+              <h2>Understanding the Controls</h2>
+            </div>
+            <div class="step-content">
+              <h3 class="animate__animated animate__fadeIn animate__delay-1s">Basic Parameters:</h3>
+              <ul class="animate__animated animate__fadeIn animate__delay-1s">
+                <li><strong>Initial Velocity (v0):</strong> Speed at launch (m/s)</li>
+                <li><strong>Angle:</strong> Launch angle in degrees</li>
+                <li><strong>Gravity (g):</strong> Acceleration due to gravity</li>
+              </ul>
+              <h3 class="animate__animated animate__fadeIn animate__delay-2s">Advanced Settings:</h3>
+              <ul class="animate__animated animate__fadeIn animate__delay-2s">
+                <li><strong>Wind Speed & Angle:</strong> Environmental effects</li>
+                <li><strong>Air Density:</strong> Affects air resistance</li>
+                <li><strong>Mass & Radius:</strong> Projectile properties</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="instruction-step glass-panel animate__animated animate__fadeInLeft animate__delay-1s">
+            <div class="step-header">
+              <div class="step-number glow-text">2</div>
+              <h2>Scoring System</h2>
+            </div>
+            <div class="step-content">
+              <h3 class="animate__animated animate__fadeIn animate__delay-2s">Target Zones:</h3>
+              <ul class="animate__animated animate__fadeIn animate__delay-2s">
+                <li class="score-zone green"><strong>Green Zone (Center):</strong> 1.5× score multiplier</li>
+                <li class="score-zone blue"><strong>Blue Zone (Middle):</strong> 1.0× score multiplier</li>
+                <li class="score-zone red"><strong>Red Zone (Outer):</strong> 0.5× score multiplier</li>
+              </ul>
+              <p class="score-note animate__animated animate__fadeIn animate__delay-3s">Base points: 10 × multiplier</p>
+            </div>
+          </div>
+
+          <div class="instruction-step glass-panel animate__animated animate__fadeInLeft animate__delay-2s">
+            <div class="step-header">
+              <div class="step-number glow-text">3</div>
+              <h2>Tips & Strategies</h2>
+            </div>
+            <div class="step-content">
+              <ul class="tips-list animate__animated animate__fadeIn animate__delay-3s">
+                <li class="tip"><span class="tip-icon">🎯</span> Start with 45° for maximum range without wind</li>
+                <li class="tip"><span class="tip-icon">💨</span> Adjust angle higher when shooting into the wind</li>
+                <li class="tip"><span class="tip-icon">🌬️</span> Lower angle when wind is behind you</li>
+                <li class="tip"><span class="tip-icon">👀</span> Watch trajectory animation to learn from each shot</li>
+                <li class="tip"><span class="tip-icon">📊</span> Use the statistics panel to fine-tune your shots</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="tutorial-footer">
+        <a href="./index.html" class="btn btn-primary animate__animated animate__pulse animate__infinite">Start Playing</a>
+        <nav class="footer-links">
+          <a href="./terms.html">Terms & Conditions</a>
+          <a href="./privacy.html">Privacy Policy</a>
+        </nav>
+      </footer>
+    </div>
+  </body>
+</html>

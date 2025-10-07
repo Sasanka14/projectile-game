@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Projectile Target Practice 🎯</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body class="landing">
+    <!-- Particle background container -->
+    <div id="particles-js" class="particles-container"></div>
+
+    <!-- Background gradients -->
+    <div class="bg-gradient-1"></div>
+    <div class="bg-gradient-2"></div>
+
+    <header class="landing-header animate__animated animate__fadeIn">
+      <h1 class="glow-text">Projectile Target Practice 🎯</h1>
+      <p class="subtitle animate__animated animate__fadeIn animate__delay-1s">
+        Master the Art of Projectile Motion
+      </p>
+    </header>
+
+    <main class="landing-main">
+      <section class="hero">
+        <div class="hero-content">
+          <h2 class="glow-text">Test Your Physics Skills</h2>
+          <p class="animate__animated animate__fadeIn animate__delay-2s">
+            Challenge yourself with an engaging game that combines physics
+            principles with precision targeting.
+          </p>
+          <ul class="features">
+            <li>
+              <span class="feature-icon">🎮</span>
+              <span class="feature-text">Interactive Physics Simulation</span>
+            </li>
+            <li>
+              <span class="feature-icon">🎯</span>
+              <span class="feature-text">Precision Target Practice</span>
+            </li>
+            <li>
+              <span class="feature-icon">📊</span>
+              <span class="feature-text">Real-time Trajectory Analysis</span>
+            </li>
+            <li>
+              <span class="feature-icon">🏆</span>
+              <span class="feature-text">Score-based Challenges</span>
+            </li>
+          </ul>
+          <div class="cta-buttons">
+            <a
+              href="./index.html"
+              class="btn btn-primary animate__animated animate__pulse animate__infinite"
+              >Play Now</a
+            >
+            <button class="btn btn-secondary" onclick="showTutorial()">
+              How to Play
+            </button>
+          </div>
+        </div>
+        <div
+          class="hero-image animate__animated animate__fadeInRight animate__delay-1s"
+        >
+          <video 
+            autoplay 
+            loop 
+            muted 
+            playsinline 
+            preload="auto"
+            class="preview-video"
+            poster="./assets/demo.mov"
+          >
+            <source src="./assets/demo.mov" type="video/mp4" />
+            <source src="./assets/demo.mov" type="video/quicktime" />
+            <source src="./assets/demo.mov" type="video/x-m4v" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </section>
+            <section class="how-to-play" id="tutorial">
+        <div id="tutorial-bg" class="tutorial-particles"></div>
+        <h2 class="glow-text">How to Play</h2>
+        <div class="steps-modern">
+          <div class="step-card glass-panel animate__animated animate__fadeInLeft">
+            <div class="step-number">1</div>
+            <h3>Set Your Parameters</h3>
+            <p>
+              Adjust initial velocity and angle to control your projectile's path. 
+              Consider wind and air resistance for realistic physics.
+            </p>
+          </div>
+          <div class="step-card glass-panel animate__animated animate__fadeInLeft animate__delay-1s">
+            <div class="step-number">2</div>
+            <h3>Aim for the Target</h3>
+            <p>
+              Calculate the perfect trajectory to hit the target zone. 
+              Different zones offer different score multipliers!
+            </p>
+          </div>
+          <div class="step-card glass-panel animate__animated animate__fadeInLeft animate__delay-2s">
+            <div class="step-number">3</div>
+            <h3>Launch!</h3>
+            <p>
+              Watch your projectile fly and see if you hit the mark. 
+              Learn from each attempt and adjust your parameters for better accuracy.
+            </p>
+          </div>
+        </div>
+        <div class="tutorial-nav">
+          <a href="./tutorial.html" class="btn btn-secondary animate__animated animate__fadeIn animate__delay-3s">
+            View Full Tutorial
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="landing-footer">
+      <div class="footer-content">
+        <div class="footer-signature animate__animated animate__fadeInUp">
+          <span
+            class="built-by animate__animated animate__fadeIn animate__delay-1s"
+            >Built with
+            <span
+              class="sparkle animate__animated animate__fadeIn animate__delay-2s"
+              >✨</span
+            >
+            by</span
+          >
+          <span
+            class="signature animate__animated animate__fadeIn animate__delay-1s"
+            >Sasanka</span
+          >
+        </div>
+        <p
+          class="footer-tagline animate__animated animate__fadeIn animate__delay-2s"
+        >
+          Physics meets craft • No drag, level ground
+        </p>
+        <nav class="footer-nav">
+          <div
+            class="nav-group animate__animated animate__fadeInUp animate__delay-2s"
+          >
+            <h4>Game</h4>
+            <a href="./index.html" class="nav-link">Play Now</a>
+            <a href="./tutorial.html" class="nav-link">How to Play</a>
+          </div>
+          <div
+            class="nav-group animate__animated animate__fadeInUp animate__delay-2s"
+          >
+            <h4>Links</h4>
+            <a
+              href="https://github.com/sasanka/projectile-game"
+              target="_blank"
+              class="nav-link"
+              >GitHub</a
+            >
+            <a href="./tutorial.html" class="nav-link">Tutorial</a>
+          </div>
+          <div
+            class="nav-group animate__animated animate__fadeInUp animate__delay-2s"
+          >
+            <h4>Legal</h4>
+            <a href="./terms.html" class="nav-link">Terms & Conditions</a>
+            <a href="./privacy.html" class="nav-link">Privacy Policy</a>
+          </div>
+        </nav>
+        <div
+          class="footer-bottom animate__animated animate__fadeIn animate__delay-3s"
+        >
+          <p>© 2025 Projectile Target Practice. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function showTutorial() {
+        const tutorial = document.getElementById("tutorial");
+        tutorial.scrollIntoView({ behavior: "smooth" });
+      }
+    </script>
+    <script src="./landing.js"></script>
+  </body>
+</html>
