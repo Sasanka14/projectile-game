@@ -2,9 +2,20 @@
 
 A **physics-based educational game** that helps students understand **projectile motion** through interactive simulations and engaging gameplay. Perfect for both **learning** and **fun experimentation**.  
 
-![Game Preview](frontend/assets/demo.mov)
 
----
+## 📸 Preview  
+
+<table>
+  <tr>
+    <td>
+      <img width="700" alt="Game Screenshot 1" src="https://github.com/user-attachments/assets/876d9a42-fe91-4fab-b743-f49e4ff1b35d" />
+    </td>
+    <td>
+      <img width="700" alt="Game Screenshot 2" src="https://github.com/user-attachments/assets/3196b5ef-a614-4e25-90f9-aa7b9c885ab5" />
+    </td>
+  </tr>
+</table>
+
 
 ## 🚀 Features  
 
