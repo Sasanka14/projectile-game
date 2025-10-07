@@ -176,7 +176,8 @@ Distributed under the **MIT License**. See [LICENSE](LICENSE) for details.
 👤 **Sasanka**
 
 * GitHub: [sasanka](https://github.com/sasanka14)
-* Project: [Projectile Game](https://github.com/sasanka/projectile-game)
+* Project: [Projectile Game](https://github.com/sasanka14/projectile-game)
+* Instagram: [@sashank.codes_](https://www.instagram.com/sashank.codes_?igsh=MWdyNHd2NDFzZWl3Yw==)
 
 ---
 
